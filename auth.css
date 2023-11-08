@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image:url("/img/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navigate-form-top {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    justify-self: flex-start;
+  }
+  
+  .navigate-form-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .name-website-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+  }
+  
+  .menu-frame {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 65%;
+    height: 100%;
+  }
+  
+  .Home,
+  .Player-text,
+  .Search,
+  .Info {
+    color: #cc0000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    justify-self: center;
+    align-self: center;
+    text-wrap: nowrap;
+    padding: 30px;
+    text-decoration: none;
+  }
+  .Home {
+    margin-left: 65px;
+  }
+  .Info {
+    margin-right: 20px;
+  }
+  
+  .Home:hover,
+  .Player-text:hover,
+  .Search:hover,
+  .Info:hover {
+    text-decoration: underline;
+  }
+
+  .img-website {
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+  }
+  
+  .name-website {
+    color: #cc0000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    justify-self: center;
+    align-self: center;
+    text-wrap: nowrap;
+    margin-right: auto;
+    margin-left: 10px;
+  }
+
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: 2px solid white;
+    max-height: 450px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+}
+
+/*checkbox to switch from sign up to login*/
+
+#chk {
+    display: none;
+}
+
+/*Login*/
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.login label {
+    margin: 5% 0 5%;
+}
+
+label {
+    color: #fff;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    background: #e0dede;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+/*Register*/
+
+.register {
+    background: #eee;
+    border-radius: 60% / 10%;
+    transition: .8s ease-in-out;
+}
+
+.register label {
+    color: #cc0000;
+    transform: scale(.6);
+}
+
+#chk:checked ~ .register {
+    transform: translateY(-68%);
+}
+
+#chk:checked ~ .register label {
+    transform: scale(1);
+    margin-bottom: .5rem;
+}
+
+#chk:checked ~ .login label {
+    transform: scale(.6);
+}   
+
+/*Button*/
+
+.form button {
+    width: 70%;
+    height: 40px;
+    margin: 15px auto 10%;
+    color: #fff;
+    background: #ff4949;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.form button:hover {
+    background-color: #ff9292;
+}
